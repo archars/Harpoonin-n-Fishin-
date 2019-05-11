@@ -84,3 +84,17 @@ if(yPosition !=0){
 // ------- UPDATE USER MOVEMENT
 x += xPosition;
 y += yPosition;
+
+
+//sprite flipping 
+if (keyboard_check(ord("A"))) {
+    sprite_index = spr_character_left;
+}
+else {
+    sprite_index = spr_character_right;
+}
+
+//idle sprite
+if (keyboard_lastkey == (ord("A"))) { 
+	sprite_index = spr_character_left;
+}
